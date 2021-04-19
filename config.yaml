@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-example
+data:
+  application.properties: |-
+    test.message=Hello test message from config.yaml
+    controller.message=Hi controller message from config.yaml

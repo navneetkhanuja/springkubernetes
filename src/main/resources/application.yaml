@@ -1,0 +1,19 @@
+controller:
+  message: "Test message from application.yaml"
+
+logging:
+  level:
+    org:
+     springframework:
+      cloud:
+       kubernetes: DEBUG
+
+spring:
+  application:
+    name: config-example
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, refresh, keepalive, health
